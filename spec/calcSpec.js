@@ -69,3 +69,54 @@ describe("Calculator", function(){
         });
     });
 });
+
+
+describe ("whatcanIdrink", function() {
+    beforeEach(function(){
+        drink = new Drink();
+    });
+    describe ("No people under 0", function(){
+        it("Should say sorry if age is less than 0", function(){
+            if
+            (expect(noLessThan0(-1, 0)).toBe(true)){
+                return ("Sorry, no drinks under 0");
+            }
+            
+        });
+    });
+    describe ("Under fourteen", function(){
+        it ("Should say drink Toddy", function(){
+            if(expect(lessThan14(13, 14)).toBe(true)){
+                return ("Drink a Toddy");
+            }
+        });
+    });
+    describe ("Under eighteen", function(){
+        it ("Should say drink a coke", function(){
+            if(expect(lessThan18(17, 18)).toBe(true)){
+                return ("Drink a coke");
+            }
+        });
+    });
+    describe ("Under 21", function(){
+        it ("Should say drink a beer", function(){
+            if(expect(lessThan21(20, 21)).toBe(true)){
+                return ("Drink a beer");
+            }
+        });
+    });
+    describe ("Under 130", function(){
+        it ("Should say Have a whiskey!", function(){
+            if(expect(lessThan130(129, 130)).toBe(true)){
+                return ("Have a whiskey");
+            }
+        });
+    });
+    describe ("Over 130", function(){
+        it ("Should say Age is incorrect", function(){
+            if(expect(moreThan130(131, 130)).toBe(true)){
+                return ("Age is incorrect");
+            }
+        });
+    });
+});
