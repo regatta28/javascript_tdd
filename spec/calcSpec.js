@@ -177,11 +177,10 @@ describe ("fullName", function(){
             }
         });
     });
-    describe ("Null", function(){
-        
-        it("Should give back Null", function(){
-            expect(null).tobeNull();
-        });
+    describe ('toBeNull', function() {
+    it('passes if subject is null', function() {
+        expect(null).toBeNull();
+    });
     });
     
 });

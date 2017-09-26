@@ -130,9 +130,6 @@ function wrongName(name, secondName) {
         return wholeName;
     }
 }
-function Nll(data) {
-    if (data = null){
-        return true;
-    }
-}
+
+    
 
