@@ -120,3 +120,68 @@ describe ("whatcanIdrink", function() {
         });
     });
 });
+
+describe ("FizzBuzz", function(){
+    beforeEach(function(){
+        fizzy = new Fizzy();
+    });
+    describe("Fizzbuzz", function(){
+        it("Should say Fizzbuzz", function(){
+            if(expect(FizzBuzz(15)).toBe(true)){
+                return ("Fizzbuzz");
+            }
+        });
+    });
+    describe("Fizz", function(){
+        it("Should say Fizz", function(){
+            if(expect(FizzBuzz(15)).toBe(true)){
+                return ("Fizz");
+            }
+        });
+    });
+    describe("Buzz", function(){
+        it("Should say Buzz", function(){
+            if(expect(Buzz(15)).toBe(true)){
+                return ("Buzz");
+            }
+        });
+    });
+    describe("Not Divisable", function(){
+        it("Should give back the number which is not divisable by 5", function(){
+            if(expect(notdivide(21)).toBe(true)){
+                return true;
+            } 
+                
+        });
+    });
+});
+
+
+describe ("fullName", function(){
+    beforeEach = function(){
+        Name = new Name;
+    };
+    describe ("wholeName", function(){
+        it("Should give the whole name", function(){
+            if
+            (expect(WholeName("Will", "Baxter")).toBe(true)){
+                return true;
+            }
+        });
+    });
+    describe ("wrongName", function(){
+        it("Should give error alert", function(){
+            if
+            (expect(WholeName(1, "Baxter")).toBe(true)){
+                return true;
+            }
+        });
+    });
+    describe ("Null", function(){
+        
+        it("Should give back Null", function(){
+            expect(null).tobeNull();
+        });
+    });
+    
+});

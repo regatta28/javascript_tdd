@@ -81,3 +81,58 @@ function moreThan130 (age, secondAge) {
         return moreThan130;
     }
 }
+
+
+
+Fizzy = function(){
+    this.value = 0;
+};
+
+function FizzBuzz(number) {
+    if(number%3 === 0 && number%5 === 0) {
+        return true;
+    }
+}
+function Fizz(number) {
+    if(number%3 === 0) {
+        return true;
+    }
+}
+function Buzz(number) {
+    if(number%5 === 0) {
+        return true;
+    }
+}
+function notdivide(number) {
+    var notdivisable = number%5 === false;
+    if(notdivisable = true) {
+        return notdivisable;
+    }
+}
+
+
+
+Name = function(){
+    this.value = 0;
+};
+
+function WholeName(name, secondName) {
+    var wholeName = name + " " + secondName;
+    if(wholeName = true){
+    
+        return wholeName;
+    }
+}
+function wrongName(name, secondName) {
+    var wrongName = name + " " + secondName;
+    if(wrongName = false){
+    
+        return wholeName;
+    }
+}
+function Nll(data) {
+    if (data = null){
+        return true;
+    }
+}
+
